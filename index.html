@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section class="home">
+        <h1>Hello, I'm <span>Bhavana</span></h1>
+        <p>Information Science Engineering Student</p>
+        <button onclick="showMessage()">Welcome</button>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am an Information Science and Engineering student.
+            I am interested in programming, web development and
+            learning new technologies.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div>C</div>
+            <div>C++</div>
+            <div>Python</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>SQL</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Document Forgery Detection System</h3>
+            <p>
+                A Python-based project that compares document images
+                to identify possible differences.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>College Indoor Navigation</h3>
+            <p>
+                A navigation project designed to help students
+                find classrooms and locations inside a college.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
